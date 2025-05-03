@@ -1,5 +1,9 @@
-import React from "react";
+import { HeaderPortfolio } from "../components";
 
 export const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return (
+    <>
+      <HeaderPortfolio />
+    </>
+  );
 };
