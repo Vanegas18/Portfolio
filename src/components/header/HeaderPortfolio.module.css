@@ -1,0 +1,46 @@
+.navLink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2563eb;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+
+.navLink:hover {
+  color: #2563eb;
+}
+
+.navLink:hover::after {
+  transform: scaleX(0.4);
+  transform-origin: center;
+}
+
+.activeNavLink {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.activeNavLink {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.activeNavLink::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
